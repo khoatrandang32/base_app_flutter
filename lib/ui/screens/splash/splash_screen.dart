@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'package:base_app/main.dart';
-import 'package:base_app/ui/screens/splash/splash_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
