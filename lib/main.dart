@@ -2,7 +2,7 @@ import 'package:base_app/data/services/dio_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'core/routes/app_router_config.dart';
-import 'core/services/shared_prefs_service.dart';
+import 'core/services/preferences.dart';
 import 'core/theme/app_theme.dart';
 import 'data/services/api_service.dart';
 
@@ -12,7 +12,6 @@ late ApiService apiService;
 void main() {
   dioClient = DioClient();
   apiService = ApiService(dioClient.dio);
-  // SharedPrefsService.init();
   runApp(const MyApp());
 }
 
