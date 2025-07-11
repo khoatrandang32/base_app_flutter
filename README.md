@@ -1,17 +1,31 @@
-# base_app
-
-A new Flutter project.
-
+# Base App Flutter
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+**Key Libraries:**
 
-A few resources to get you started if this is your first Flutter project:
+- `Dio`, `Retrofit`, `retrofit_generator` – for API layer
+- `GoRouter` – for routing
+- `GetX` – for state management
+- `Logger` – for debugging
+- `flutter_easyloading` – for loading UI
+- `json_serializable` – for parsing JSON
+- `build_runner` – for code generation.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Project Structure Overview:**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# base_app_flutter
+Our project follows a clear and modular directory structure to enhance maintainability and scalability:
+
+* **`lib/`**: The primary source code directory.
+    * **`core/`**: Houses essential application-wide components:
+        * `constants/`: Application-wide constants.
+        * `routes/`: Defines navigation routes.
+        * `services/`: Core application services.
+        * `theme/`: Theming and styling configurations.
+        * `utils/`: General utility functions.
+    * **`data/`**: Manages data-related aspects:
+        * `models/`: Data models for the application.
+        * `services/`: Data fetching and manipulation services.
+    * **`ui/`**: User interface components:
+        * `controllers/`: Logic controllers for UI.
+        * `screens/`: Individual application screens/pages.
+        * `widgets/`: Reusable UI components.
