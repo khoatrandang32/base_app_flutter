@@ -8,9 +8,11 @@ class BaseScreen extends StatelessWidget {
     super.key,
     required this.child,
     this.showBackButton = true,
+    required this.title,
   });
 
   final Widget child;
+  final String title;
   final bool showBackButton;
 
   @override
@@ -24,7 +26,7 @@ class BaseScreen extends StatelessWidget {
                   icon: Icon(Icons.chevron_left, size: 32),
                 )
                 : null,
-        title: Text('Home'),
+        title: Text(title),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(

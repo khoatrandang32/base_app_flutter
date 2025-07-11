@@ -14,6 +14,7 @@ class HomeScreen extends StatelessWidget {
       builder: (controller) {
         return BaseScreen(
           showBackButton: false,
+          title: 'Home',
           child: Center(child: Text('Home Screen')),
         );
       },
